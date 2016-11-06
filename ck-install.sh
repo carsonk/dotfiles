@@ -47,6 +47,8 @@ git submodule add https://github.com/flazz/vim-colorschemes.git bundle/colorsche
 
 # Install applications.
 echo "[*] Installing apt-get applications."
-sudo apt-get install -y python3  
+sudo apt-get install -y python3 python3-pip bpython3 python-pip
+sudo pip install --upgrade pip
+sudo pip3 install --upgrade pip
 
 echo "[*] Complete."

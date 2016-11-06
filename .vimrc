@@ -23,6 +23,10 @@ set foldnestmax=10
 set foldmethod=indent
 nnoremap <space> za " space open/closes folds
 
+set laststatus=2
+let g:airline_theme='base16_monokai'
+let g:airline_powerline_fonts=1
+
 nnoremap B ^
 nnoremap E $
 
