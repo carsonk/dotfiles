@@ -41,5 +41,5 @@ alias sudh=sudo -h
 # Let's get zplug going.
 source $HOME/.zplug/init.zsh
 
-export PS1="%{$fg[red]%}CK%{$reset_color%} ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
+#export PS1="%{$fg[red]%}CK%{$reset_color%} ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 

@@ -43,6 +43,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 cd ~/.vim
+git init
 git submodule add https://github.com/flazz/vim-colorschemes.git bundle/colorschemes
 
 # Install applications.
@@ -61,7 +62,7 @@ echo "[*] Spotify."
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
-sudo apt-get install spotify-client
+sudo apt-get install -y spotify-client
 
 echo "[*] Stuff we're gonna need for Android Studio."
 sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
