@@ -52,7 +52,7 @@ sudo pip install --upgrade pip
 sudo pip3 install --upgrade pip
 
 echo "[*] Theme shit."
-sudo add-apt-repository -y ppa:noobslab/themes 
+sudo add-apt-repository -y ppa:noobslab/themes
 sudo add-apt-repository -y ppa:noobslab/icons
 sudo apt-get update
 sudo apt-get install -y unity-tweak-tool flatabulous-theme ultra-flat-icons
