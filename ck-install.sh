@@ -1,12 +1,11 @@
 GITHUB_USERNAME=carsonk
 GITHUB_REPO=git@github.com:carsonk/dotfiles.git
 
+# Necessary applications for this script.
+sudo apt-get install -y git vim zsh
+
 # Let's do the things that require prompts up front.
 ssh-keygen -f $HOME/.ssh/id_rsa
-
-# Install applications.
-echo "[*] Installing apt-get applications."
-sudo apt-get install -y git vim zsh gcc python3
 
 # Install oh-my-zsh and switch to zsh shell.
 echo "[*] Installing oh-my-zsh."
@@ -38,5 +37,16 @@ else
 fi;
 config checkout
 config config --local status.showUntrackedFiles no
+
+echo "[*] Pulling down Vim Pathogen."
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+cd ~/.vim
+git submodule add https://github.com/flazz/vim-colorschemes.git bundle/colorschemes
+
+# Install applications.
+echo "[*] Installing apt-get applications."
+sudo apt-get install -y python3  
 
 echo "[*] Complete."
