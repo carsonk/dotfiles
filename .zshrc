@@ -36,7 +36,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias config="/usr/bin/git --git-dir=/home/carson/.cfg/ --work-tree=/home/carson"
-alias sudh=sudo -H
+alias sudh='sudo -H'
 
 # Let's get zplug going.
 source $HOME/.zplug/init.zsh
