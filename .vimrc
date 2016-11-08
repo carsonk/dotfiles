@@ -8,6 +8,8 @@ colorscheme molokai
 set tabstop=4
 set softtabstop=4
 set expandtab
+set smartindent
+set smarttab
 
 set number
 filetype indent on
@@ -29,6 +31,4 @@ let g:airline_powerline_fonts=1
 
 nnoremap B ^
 nnoremap E $
-
-nnoremap gV `[v`] " highlight text from last time you were in insert mode
 
