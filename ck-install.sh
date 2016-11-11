@@ -12,7 +12,6 @@ GITHUB_USERNAME=carsonk
 GITHUB_REPO=git@github.com:carsonk/dotfiles.git
 
 echo "Home is $HOME"
-echo ~
 
 runu="sudo -u $USER"
 
@@ -25,7 +24,7 @@ $runu ssh-keygen -f $HOME/.ssh/id_rsa
 
 # Install oh-my-zsh and switch to zsh shell.
 echo "[*] Installing oh-my-zsh."
-sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | $runu zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | $runu zsh
 chsh -s /bin/zsh $USER
 
 # Install zplug.
@@ -68,7 +67,7 @@ chown $USER:$USER $HOME/*
 
 # Install applications.
 echo "[*] Installing apt-get applications."
-apt-get install -y python3 python3-pip bpython3 python-pip atom sqlite3 mysql
+apt-get install -y python3 python3-pip bpython3 python-pip sqlite3 mysql
 pip install --upgrade pip
 pip3 install --upgrade pip
 
@@ -98,6 +97,11 @@ else
     apt install -f
     dpkg -i google-chrome*.deb
 fi        
+
+echo "[*] Installing Atom."
+add-apt-repository -y ppa:webupd8team/atom
+apt-get update
+apt-get install -y atom
 
 echo "[*] Complete. Reboot to complete."
 
