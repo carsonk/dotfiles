@@ -29,6 +29,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+export PATH=$PATH:/home/carson/Projects/depot_tools/:/home/carson
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
