@@ -34,13 +34,17 @@ export PATH=$PATH:/home/carson/Projects/depot_tools/:/home/carson
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Edit this file.
 alias zshconfig="vim ~/.zshrc"
+# OHMYZSH
 alias ohmyzsh="vim ~/.oh-my-zsh"
+# Git call for bare git dotfiles repo.
 alias config="/usr/bin/git --git-dir=/home/carson/.cfg/ --work-tree=/home/carson"
+# Sudo, but run with current user in path.
 alias sudh='sudo -H'
+# Tree, but ignore items in .gitignore.
+alias gtree="tree -I \"\$(tr '\\n' '\|' < \".gitignore\" )\" \"\${@}\""
 
 # Let's get zplug going.
 source $HOME/.zplug/init.zsh
-
-#export PS1="%{$fg[red]%}CK%{$reset_color%} ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 
