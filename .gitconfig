@@ -3,3 +3,5 @@
 	name = Carson Killbreath
 [push]
 	default = simple
+[core]
+	pager = less -FX
