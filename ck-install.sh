@@ -68,9 +68,14 @@ chown $USER:$USER $HOME/*
 # Install applications.
 echo "[*] Installing apt-get applications."
 apt-get install -y python3 python3-pip bpython3 python-pip sqlite3 mysql
-apt-get install -y ack ag
+apt-get install -y ack ag npm
 pip install --upgrade pip
 pip3 install --upgrade pip
+
+echo "[*] Installing node stuff."
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+apt-get install -y nodejs
+npm install -g bower
 
 echo "[*] Theme shit."
 add-apt-repository -y ppa:noobslab/themes
