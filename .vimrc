@@ -6,18 +6,21 @@ set mouse=a
 
 colorscheme molokai
 set tabstop=4
+set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smartindent
 set smarttab
 
 set number
-filetype indent on
+filetype indent plugin on
 
 set showmatch
 
 set incsearch
 set hlsearch
+
+set wildmenu
 
 set foldenable
 set foldlevelstart=10
@@ -28,5 +31,4 @@ nnoremap <space> za " space open/closes folds
 set laststatus=2
 let g:airline_theme='base16_monokai'
 let g:airline_powerline_fonts=1
-
 
