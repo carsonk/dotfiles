@@ -34,6 +34,9 @@ export PATH=$PATH:/home/carson/Projects/depot_tools/:/home/carson
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+export GOPATH=$HOME/gocode
+
 # Edit this file.
 alias zshconfig="vim ~/.zshrc"
 # OHMYZSH
