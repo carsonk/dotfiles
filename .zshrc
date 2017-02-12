@@ -47,6 +47,10 @@ alias config="/usr/bin/git --git-dir=/home/carson/.cfg/ --work-tree=/home/carson
 alias sudh='sudo -H'
 # Tree, but ignore items in .gitignore.
 alias gtree="tree -I \"\$(tr '\\n' '\|' < \".gitignore\" )\" \"\${@}\""
+# Go to projects directory.
+alias cdp="cd ~/Projects"
+# Ag ps
+alias psag="ps -aux | ag -v 'ag ' | ag"
 
 # Let's get zplug going.
 source $HOME/.zplug/init.zsh
