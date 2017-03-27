@@ -13,6 +13,8 @@ tmux split-window -h
 tmux select-pane -t 1
 tmux split-window -v
 _tmux_send_keys_all_panes_ "cd ~/Projects/tablefetchserver" C-m
+tmux select-pane -t 0
+tmux send-keys "vim ." C-m
 
 tmux new-window -t $SESSION:1 -n 'Server Log'
 tmux split-window -h
