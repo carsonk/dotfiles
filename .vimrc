@@ -63,3 +63,8 @@ let g:airline_symbols.linenr = ''
 
 set guifont=DejaVu\ Sans:s12
 
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%101v', 100)
+
+map <Home> ^
+
